@@ -1,8 +1,8 @@
 {% set name = "dtool_s3" %}
 {% set reponame = "dtool-s3" %}
 {% set author = "jic-dtool" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "3f256cbe8e63bd5ef710aae10639dfb8d9f45189b73399336bf26c8f3bc5971f" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "224585c30741d2fa4766f03aab28dc0f2e36bf4ae329cd352eaff16e9c6e16fd" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - click
     - setuptools
     - dtoolcore
@@ -34,6 +34,10 @@ test:
   imports:
     - dtool_s3
     - dtool_s3.storagebroker
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/{{ author }}/{{ reponame }}
@@ -46,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - pvanheus
+    - jan-janssen
