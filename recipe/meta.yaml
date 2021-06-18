@@ -1,8 +1,8 @@
 {% set name = "dtool_s3" %}
 {% set reponame = "dtool-s3" %}
 {% set author = "jic-dtool" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "224585c30741d2fa4766f03aab28dc0f2e36bf4ae329cd352eaff16e9c6e16fd" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "c2622c886d9905cc94acb603890b207642092f0043fc83f825022fc269d003ef" %}
 
 package:
   name: {{ name|lower }}
@@ -15,8 +15,8 @@ source:
 build:
   number: 0
   noarch: python
-  preserve_egg_dir: True
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  preserve_egg_dir: true
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   home: http://github.com/{{ author }}/{{ reponame }}
   license: MIT
   license_file: LICENSE.rst
-  summary: 'S3 support for dtool'
+  summary: S3 support for dtool
 
   dev_url: https://github.com/{{ author }}/{{ reponame }}
 
