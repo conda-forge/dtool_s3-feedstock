@@ -36,12 +36,12 @@ test:
     - pip
 
 about:
-  home: http://github.com/{{ author }}/{{ reponame }}
+  home: https://github.com/jic-dtool/dtool-s3
   license: MIT
   license_file: LICENSE.rst
   summary: S3 support for dtool
-
-  dev_url: https://github.com/{{ author }}/{{ reponame }}
+  doc_url: https://github.com/jic-dtool/dtool-s3
+  dev_url: https://github.com/jic-dtool/dtool-s3
 
 extra:
   recipe-maintainers:
