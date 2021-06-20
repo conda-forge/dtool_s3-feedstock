@@ -1,7 +1,7 @@
 About dtool_s3
 ==============
 
-Home: http://github.com//
+Home: https://github.com/jic-dtool/dtool-s3
 
 Package license: MIT
 
@@ -9,7 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dtool_s3-feedst
 
 Summary: S3 support for dtool
 
-Development: https://github.com//
+Development: https://github.com/jic-dtool/dtool-s3
+
+Documentation: https://github.com/jic-dtool/dtool-s3
 
 Current build status
 ====================
