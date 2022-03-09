@@ -1,5 +1,5 @@
 {% set name = "dtool_s3" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/dtool-s3/dtool-s3-{{ version }}.tar.gz
-  sha256: 7422044f40760f8ec3301e74e53582424452f2baec4527e161da0ae89016610a
+  sha256: 34d85582c4e5dea0510a592779d4033199d1f17761dc617c9ff5ce3a12be064c
 
 build:
   number: 0
